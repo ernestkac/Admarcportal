@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Redirecting…</title>
+  <meta charset="UTF-8">
+  <title>Admarc</title>
 
-  <!-- Fast redirect (SEO-safe) -->
-  <meta http-equiv="refresh" content="0; url= https://thru-pure-beauty-asking.trycloudflare.com">
-
-  <!-- JS fallback -->
   <script>
-    window.location.replace(" https://thru-pure-beauty-asking.trycloudflare.com");
+    (function () {
+      //Update ONLY when tunnel URL changes
+      const TUNNEL_BASE_URL = "https://correspondence-width-led-jose.trycloudflare.com/";
+
+      const path = window.location.pathname;
+      const query = window.location.search;
+
+      // Redirect only if query parameters exist
+      if (query && query.length > 1) {
+        window.location.replace(TUNNEL_BASE_URL + path + query);
+      }
+    })();
   </script>
 </head>
 <body>
-  Redirecting…
+  <h1>Admarc</h1>
+  <p>Welcome to Admarc.</p>
 </body>
 </html>
