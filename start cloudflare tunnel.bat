@@ -1,2 +1,3 @@
 @echo off
-cloudflared --url http://localhost:80
+cloudflared tunnel run mywamp
+REM cloudflared tunnel --url http://localhost:80
